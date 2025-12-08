@@ -11,104 +11,108 @@
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
     <!-- Styles / Scripts -->
-            <link rel="preload" as="style" href="http://localhost:8000/build/assets/app-CLUWClho.css" /><link rel="modulepreload" as="script" href="http://localhost:8000/build/assets/app-BUTCVGT_.js" /><link rel="stylesheet" href="http://localhost:8000/build/assets/app-CLUWClho.css" data-navigate-track="reload" /><script type="module" src="http://localhost:8000/build/assets/app-BUTCVGT_.js" data-navigate-track="reload"></script>    </head>
+    <link rel="preload" as="style"
+        href="https://weedlesniper.github.io/la-portfolio-static/build/assets/app-CLUWClho.css" />
+    <link rel="modulepreload" as="script"
+        href="https://weedlesniper.github.io/la-portfolio-static/build/assets/app-BUTCVGT_.js" />
+    <link rel="stylesheet" href="https://weedlesniper.github.io/la-portfolio-static/build/assets/app-CLUWClho.css"
+        data-navigate-track="reload" />
+    <script type="module" src="https://weedlesniper.github.io/la-portfolio-static/build/assets/app-BUTCVGT_.js"
+        data-navigate-track="reload"></script>
+</head>
 
 <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen flex flex-col font-sans">
 
-    
+
     <nav x-data="{ open: false }" class="navbar">
-    <!-- Primary Navigation Menu -->
-    <div class="navbar__inner">
-        <div class="navbar__row">
-            <div class="flex">
-                <!-- Logo -->
-                <div class="navbar__brand">
-                    <a href="http://localhost:8000" aria-label="Go to home">
-                        
-                        <!-- resources/views/components/application-logo.blade.php -->
+        <!-- Primary Navigation Menu -->
+        <div class="navbar__inner">
+            <div class="navbar__row">
+                <div class="flex">
+                    <!-- Logo -->
+                    <div class="navbar__brand">
+                        <a href="https://weedlesniper.github.io/la-portfolio-static" aria-label="Go to home">
 
-<svg
-    class="block h-9 w-auto"
-    viewBox="0 0 140 28"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    role="img"
-    aria-label="Luc Adams logo"
->
-    <!-- Text-based mark so it stays crisp & lightweight -->
-    <text x="0" y="20"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
-          font-size="20"
-          font-weight="600"
-          fill="currentColor">
-        &lt;/LA&gt;
-    </text>
-</svg>
-                    </a>
+                            <!-- resources/views/components/application-logo.blade.php -->
+
+                            <svg class="block h-9 w-auto" viewBox="0 0 140 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Luc Adams logo">
+                                <!-- Text-based mark so it stays crisp & lightweight -->
+                                <text x="0" y="20"
+                                    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+                                    font-size="20" font-weight="600" fill="currentColor">
+                                    &lt;/LA&gt;
+                                </text>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Navigation Links (Desktop) -->
+                    <div class="navbar__links">
+
+                        <a href="https://weedlesniper.github.io/la-portfolio-static" class="nav-link">
+                            Home
+                        </a>
+
+                        <a href="https://weedlesniper.github.io/la-portfolio-static/projects"
+                            class="nav-link nav-link--active">
+                            Projects
+                        </a>
+
+                        <a href="https://weedlesniper.github.io/la-portfolio-static/about" class="nav-link">
+                            About
+                        </a>
+
+                        <a href="https://weedlesniper.github.io/la-portfolio-static/contact" class="nav-link">
+                            Contact
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Navigation Links (Desktop) -->
-                <div class="navbar__links">
-                    
-                    <a href="http://localhost:8000" class="nav-link">
-                        Home
-                    </a>
 
-                    <a href="http://localhost:8000/projects" class="nav-link nav-link--active">
-                        Projects
-                    </a>
 
-                    <a href="http://localhost:8000/about" class="nav-link">
-                        About
-                    </a>
-
-                    <a href="http://localhost:8000/contact" class="nav-link">
-                        Contact
-                    </a>
+                <!-- Hamburger -->
+                <div class="navbar__hamburger">
+                    <button @click="open = ! open" class="hamburger-btn" aria-label="Toggle menu">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                            <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                            <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
-            </div>
-
-
-
-            <!-- Hamburger -->
-            <div class="navbar__hamburger">
-                <button @click="open = ! open" class="hamburger-btn" aria-label="Toggle menu">
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                        <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                        <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-    
+
     <main class="flex-1 flex flex-col items-center p-6 lg:p-8">
 
-        
+
         <div class="w-full max-w-5xl space-y-6">
 
-            
+
             <section>
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
 
-                    
+
                     <div class="project-card">
                         <div class="project-card__media">
                             <video autoplay loop muted playsinline preload="metadata"
                                 class="w-full h-full object-cover block">
-                                <source src="http://localhost:8000/storage/projects/multimodal-pipeline.mp4" type="video/mp4">
+                                <source
+                                    src="https://weedlesniper.github.io/la-portfolio-static/storage/projects/multimodal-pipeline.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
 
                         <div class="project-card__body">
                             <div class="project-card__badge">
-                                <img src="http://localhost:8000/storage/logos/woodside.png" alt="Woodside Energy logo"
-                                    class="project-card__badge-logo">
+                                <img src="https://weedlesniper.github.io/la-portfolio-static/storage/logos/woodside.png"
+                                    alt="Woodside Energy logo" class="project-card__badge-logo">
                                 <span class="project-card__badge-text">
                                     Woodside Energy
                                 </span>
@@ -145,19 +149,21 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="project-card">
                         <div class="project-card__media">
                             <video autoplay loop muted playsinline preload="metadata"
                                 class="w-full h-full object-cover block">
-                                <source src="http://localhost:8000/storage/projects/wysp-demo.mp4" type="video/mp4">
+                                <source
+                                    src="https://weedlesniper.github.io/la-portfolio-static/storage/projects/wysp-demo.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
 
                         <div class="project-card__body">
                             <div class="project-card__badge">
-                                <img src="http://localhost:8000/storage/logos/curtin.png" alt="Curtin University logo"
-                                    class="project-card__badge-logo">
+                                <img src="https://weedlesniper.github.io/la-portfolio-static/storage/logos/curtin.png"
+                                    alt="Curtin University logo" class="project-card__badge-logo">
                                 <span class="project-card__badge-text">
                                     Curtin University
                                 </span>
@@ -203,19 +209,21 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="project-card">
                         <div class="project-card__media">
                             <video autoplay loop muted playsinline preload="metadata"
                                 class="w-full h-full object-cover block">
-                                <source src="http://localhost:8000/storage/projects/mp-demo-vid.mp4" type="video/mp4">
+                                <source
+                                    src="https://weedlesniper.github.io/la-portfolio-static/storage/projects/mp-demo-vid.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
 
                         <div class="project-card__body">
                             <div class="project-card__badge">
-                                <img src="http://localhost:8000/storage/logos/curtin.png" alt="Curtin University logo"
-                                    class="project-card__badge-logo">
+                                <img src="https://weedlesniper.github.io/la-portfolio-static/storage/logos/curtin.png"
+                                    alt="Curtin University logo" class="project-card__badge-logo">
                                 <span class="project-card__badge-text">
                                     Curtin University
                                 </span>
@@ -253,19 +261,21 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="project-card">
                         <div class="project-card__media">
                             <video autoplay loop muted playsinline preload="metadata"
                                 class="w-full h-full object-cover block">
-                                <source src="http://localhost:8000/storage/projects/ml-demo.mp4" type="video/mp4">
+                                <source
+                                    src="https://weedlesniper.github.io/la-portfolio-static/storage/projects/ml-demo.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
 
                         <div class="project-card__body">
                             <div class="project-card__badge">
-                                <img src="http://localhost:8000/storage/logos/curtin.png" alt="Curtin University logo"
-                                    class="project-card__badge-logo">
+                                <img src="https://weedlesniper.github.io/la-portfolio-static/storage/logos/curtin.png"
+                                    alt="Curtin University logo" class="project-card__badge-logo">
                                 <span class="project-card__badge-text">
                                     Curtin University
                                 </span>
@@ -308,19 +318,21 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="project-card">
                         <div class="project-card__media">
                             <video autoplay loop muted playsinline preload="metadata"
                                 class="w-full h-full object-cover block">
-                                <source src="http://localhost:8000/storage/projects/ocr-demo.mp4" type="video/mp4">
+                                <source
+                                    src="https://weedlesniper.github.io/la-portfolio-static/storage/projects/ocr-demo.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
 
                         <div class="project-card__body">
                             <div class="project-card__badge">
-                                <img src="http://localhost:8000/storage/logos/tafe.png" alt="North Metropolitan TAFE logo"
-                                    class="project-card__badge-logo">
+                                <img src="https://weedlesniper.github.io/la-portfolio-static/storage/logos/tafe.png"
+                                    alt="North Metropolitan TAFE logo" class="project-card__badge-logo">
                                 <span class="project-card__badge-text">
                                     North Metropolitan TAFE
                                 </span>
@@ -367,18 +379,20 @@
 
                     </div>
 
-                    
+
                     <div class="project-card">
                         <div class="project-card__media">
                             <video autoplay loop muted playsinline preload="metadata"
                                 class="w-full h-full object-cover block">
-                                <source src="http://localhost:8000/storage/projects/jokes-app-demo.mp4" type="video/mp4">
+                                <source
+                                    src="https://weedlesniper.github.io/la-portfolio-static/storage/projects/jokes-app-demo.mp4"
+                                    type="video/mp4">
                             </video>
                         </div>
                         <div class="project-card__body">
                             <div class="project-card__badge">
-                                <img src="http://localhost:8000/storage/logos/tafe.png" alt="North Metropolitan TAFE logo"
-                                    class="project-card__badge-logo">
+                                <img src="https://weedlesniper.github.io/la-portfolio-static/storage/logos/tafe.png"
+                                    alt="North Metropolitan TAFE logo" class="project-card__badge-logo">
                                 <span class="project-card__badge-text">
                                     North Metropolitan TAFE
                                 </span>

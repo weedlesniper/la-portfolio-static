@@ -4,6 +4,70 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/images/code/aws.png": {
+    "file": "assets/aws-68mrX0GU.png",
+    "src": "resources/images/code/aws.png"
+  },
+  "resources/images/code/git.png": {
+    "file": "assets/git-oRuC46Ny.png",
+    "src": "resources/images/code/git.png"
+  },
+  "resources/images/code/java.png": {
+    "file": "assets/java-DrKUT2lX.png",
+    "src": "resources/images/code/java.png"
+  },
+  "resources/images/code/php.png": {
+    "file": "assets/php-BgQRtjGl.png",
+    "src": "resources/images/code/php.png"
+  },
+  "resources/images/code/python.png": {
+    "file": "assets/python-BHOI5vto.png",
+    "src": "resources/images/code/python.png"
+  },
+  "resources/images/code/sql.png": {
+    "file": "assets/sql-LhSW77Nw.png",
+    "src": "resources/images/code/sql.png"
+  },
+  "resources/images/heroshots/royals.jpg": {
+    "file": "assets/royals-Bp2qmo3j.jpg",
+    "src": "resources/images/heroshots/royals.jpg"
+  },
+  "resources/images/heroshots/wyspgroup.jpg": {
+    "file": "assets/wyspgroup-Da_wUToQ.jpg",
+    "src": "resources/images/heroshots/wyspgroup.jpg"
+  },
+  "resources/images/landing/boat.jpg": {
+    "file": "assets/boat-Ck77p6Mm.jpg",
+    "src": "resources/images/landing/boat.jpg"
+  },
+  "resources/images/landing/grad.jpg": {
+    "file": "assets/grad-Dpu8Ls0F.jpg",
+    "src": "resources/images/landing/grad.jpg"
+  },
+  "resources/images/landing/headshot.jpg": {
+    "file": "assets/headshot-BZoWZ-Jx.jpg",
+    "src": "resources/images/landing/headshot.jpg"
+  },
+  "resources/images/landing/museum.jpg": {
+    "file": "assets/museum-N7i3n9R2.jpg",
+    "src": "resources/images/landing/museum.jpg"
+  },
+  "resources/images/landing/tori.jpg": {
+    "file": "assets/tori-Cm2xWu0T.jpg",
+    "src": "resources/images/landing/tori.jpg"
+  },
+  "resources/images/logos/curtin.png": {
+    "file": "assets/curtin-CQkpuBaY.png",
+    "src": "resources/images/logos/curtin.png"
+  },
+  "resources/images/logos/tafe.png": {
+    "file": "assets/tafe-N7iWdzGX.png",
+    "src": "resources/images/logos/tafe.png"
+  },
+  "resources/images/logos/woodside.png": {
+    "file": "assets/woodside-DSvuc4Li.png",
+    "src": "resources/images/logos/woodside.png"
+  },
   "resources/js/app.js": {
     "file": "assets/app-BUTCVGT_.js",
     "name": "app",

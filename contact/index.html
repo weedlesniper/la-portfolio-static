@@ -9,86 +9,82 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
 
-            <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-BchHeE2H.css" /><link rel="modulepreload" as="script" href="http://127.0.0.1:8000/build/assets/app-BUTCVGT_.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-BchHeE2H.css" data-navigate-track="reload" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-BUTCVGT_.js" data-navigate-track="reload"></script>    </head>
+    <link rel="preload" as="style" href="/build/assets/app-BchHeE2H.css" />
+    <link rel="modulepreload" as="script" href="/build/assets/app-BUTCVGT_.js" />
+    <link rel="stylesheet" href="/build/assets/app-BchHeE2H.css" data-navigate-track="reload" />
+    <script type="module" src="/build/assets/app-BUTCVGT_.js" data-navigate-track="reload"></script>
+</head>
 
 <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen flex flex-col font-sans">
 
-    
+
     <nav x-data="{ open: false }" class="navbar">
-    <!-- Primary Navigation Menu -->
-    <div class="navbar__inner">
-        <div class="navbar__row">
-            <div class="flex">
-                <!-- Logo -->
-                <div class="navbar__brand">
-                    <a href="http://127.0.0.1:8000" aria-label="Go to home">
-                        
-                        <!-- resources/views/components/application-logo.blade.php -->
+        <!-- Primary Navigation Menu -->
+        <div class="navbar__inner">
+            <div class="navbar__row">
+                <div class="flex">
+                    <!-- Logo -->
+                    <div class="navbar__brand">
+                        <a href="" aria-label="Go to home">
 
-<svg
-    class="block h-9 w-auto"
-    viewBox="0 0 140 28"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    role="img"
-    aria-label="Luc Adams logo"
->
-    <!-- Text-based mark so it stays crisp & lightweight -->
-    <text x="0" y="20"
-          font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
-          font-size="20"
-          font-weight="600"
-          fill="currentColor">
-        &lt;/LA&gt;
-    </text>
-</svg>
-                    </a>
+                            <!-- resources/views/components/application-logo.blade.php -->
+
+                            <svg class="block h-9 w-auto" viewBox="0 0 140 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Luc Adams logo">
+                                <!-- Text-based mark so it stays crisp & lightweight -->
+                                <text x="0" y="20"
+                                    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+                                    font-size="20" font-weight="600" fill="currentColor">
+                                    &lt;/LA&gt;
+                                </text>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Navigation Links (Desktop) -->
+                    <div class="navbar__links">
+
+                        <a href="" class="nav-link">
+                            Home
+                        </a>
+
+                        <a href="/projects" class="nav-link">
+                            Projects
+                        </a>
+
+                        <a href="/about" class="nav-link">
+                            About
+                        </a>
+
+                        <a href="/contact" class="nav-link">
+                            Contact
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Navigation Links (Desktop) -->
-                <div class="navbar__links">
-                    
-                    <a href="http://127.0.0.1:8000" class="nav-link">
-                        Home
-                    </a>
 
-                    <a href="http://127.0.0.1:8000/projects" class="nav-link">
-                        Projects
-                    </a>
 
-                    <a href="http://127.0.0.1:8000/about" class="nav-link">
-                        About
-                    </a>
-
-                    <a href="http://127.0.0.1:8000/contact" class="nav-link">
-                        Contact
-                    </a>
+                <!-- Hamburger -->
+                <div class="navbar__hamburger">
+                    <button @click="open = ! open" class="hamburger-btn" aria-label="Toggle menu">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                            <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                            <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
                 </div>
-            </div>
-
-
-
-            <!-- Hamburger -->
-            <div class="navbar__hamburger">
-                <button @click="open = ! open" class="hamburger-btn" aria-label="Toggle menu">
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
-                        <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
-                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
-                        <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
-                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <main class="flex-1 flex flex-col items-center p-6 lg:p-8">
 
         <div class="w-full max-w-2xl">
-            <div
-                class="relative overflow-hidden p-6 lg:p-8 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] rounded-lg
+            <div class="relative overflow-hidden p-6 lg:p-8 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] rounded-lg
            shadow-[inset_0_0_0_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0_0_0_1px_#fffaed2d]">
 
                 <div
@@ -97,7 +93,7 @@
 
                 <div class="relative flex flex-col h-full space-y-6">
 
-                    
+
                     <div>
                         <div
                             class="inline-flex items-center gap-2 rounded-full border border-[#e4dfd4] dark:border-[#3E3E3A] px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-[#706f6c] dark:text-[#A1A09A] mb-4">
@@ -114,10 +110,11 @@
                         </p>
                     </div>
 
-                    
+
                     <form action="#" method="POST" class="space-y-4">
-                        <input type="hidden" name="_token" value="BfRaQQ2lFNPWPCB9fXrdaVZb6NcggIbm1gohY5Sb" autocomplete="off">
-                        
+                        <input type="hidden" name="_token" value="H5XfyHVptnfbFPrB20npVM3BrrLIdnY48a8EjjSJ"
+                            autocomplete="off">
+
                         <div>
                             <label for="name"
                                 class="block text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-2">
@@ -128,7 +125,7 @@
                                 placeholder="John Doe">
                         </div>
 
-                        
+
                         <div>
                             <label for="email"
                                 class="block text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-2">
@@ -139,7 +136,7 @@
                                 placeholder="john@example.com">
                         </div>
 
-                        
+
                         <div>
                             <label for="message"
                                 class="block text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-2">
@@ -150,7 +147,7 @@
                                 placeholder="How can I help you?"></textarea>
                         </div>
 
-                        
+
                         <div class="pt-2 flex justify-end">
                             <button type="submit"
                                 class="inline-flex items-center justify-center px-6 py-2.5 text-sm bg-[#1b1b18] text-white border border-black rounded-sm hover:bg-black transition-colors">
@@ -159,7 +156,7 @@
                         </div>
                     </form>
 
-                    
+
                     <div class="pt-6 border-t border-[#eee7da] dark:border-[#272723]">
                         <p class="text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-3">
                             Connect elsewhere

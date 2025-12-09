@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact – Luc Adams</title>
+
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+
+            <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-BchHeE2H.css" /><link rel="modulepreload" as="script" href="http://127.0.0.1:8000/build/assets/app-BUTCVGT_.js" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-BchHeE2H.css" data-navigate-track="reload" /><script type="module" src="http://127.0.0.1:8000/build/assets/app-BUTCVGT_.js" data-navigate-track="reload"></script>    </head>
+
+<body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen flex flex-col font-sans">
+
+    
+    <nav x-data="{ open: false }" class="navbar">
+    <!-- Primary Navigation Menu -->
+    <div class="navbar__inner">
+        <div class="navbar__row">
+            <div class="flex">
+                <!-- Logo -->
+                <div class="navbar__brand">
+                    <a href="http://127.0.0.1:8000" aria-label="Go to home">
+                        
+                        <!-- resources/views/components/application-logo.blade.php -->
+
+<svg
+    class="block h-9 w-auto"
+    viewBox="0 0 140 28"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    role="img"
+    aria-label="Luc Adams logo"
+>
+    <!-- Text-based mark so it stays crisp & lightweight -->
+    <text x="0" y="20"
+          font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+          font-size="20"
+          font-weight="600"
+          fill="currentColor">
+        &lt;/LA&gt;
+    </text>
+</svg>
+                    </a>
+                </div>
+
+                <!-- Navigation Links (Desktop) -->
+                <div class="navbar__links">
+                    
+                    <a href="http://127.0.0.1:8000" class="nav-link">
+                        Home
+                    </a>
+
+                    <a href="http://127.0.0.1:8000/projects" class="nav-link">
+                        Projects
+                    </a>
+
+                    <a href="http://127.0.0.1:8000/about" class="nav-link">
+                        About
+                    </a>
+
+                    <a href="http://127.0.0.1:8000/contact" class="nav-link">
+                        Contact
+                    </a>
+                </div>
+            </div>
+
+
+
+            <!-- Hamburger -->
+            <div class="navbar__hamburger">
+                <button @click="open = ! open" class="hamburger-btn" aria-label="Toggle menu">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                        <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                        <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <main class="flex-1 flex flex-col items-center p-6 lg:p-8">
+
+        <div class="w-full max-w-2xl">
+            <div
+                class="relative overflow-hidden p-6 lg:p-8 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] rounded-lg
+           shadow-[inset_0_0_0_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0_0_0_1px_#fffaed2d]">
+
+                <div
+                    class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#ffecd5] blur-3xl opacity-60 dark:bg-[#f97316]/20">
+                </div>
+
+                <div class="relative flex flex-col h-full space-y-6">
+
+                    
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full border border-[#e4dfd4] dark:border-[#3E3E3A] px-3 py-1 text-[11px] uppercase tracking-[0.16em] text-[#706f6c] dark:text-[#A1A09A] mb-4">
+                            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                            <span>Open for work</span>
+                        </div>
+
+                        <h1 class="text-2xl lg:text-3xl font-semibold leading-snug">
+                            Let's get in touch
+                        </h1>
+                        <p class="mt-4 text-sm text-[#706f6c] dark:text-[#A1A09A] leading-relaxed">
+                            Have a project in mind or want to discuss my work? Send me a message below or reach out
+                            directly via email.
+                        </p>
+                    </div>
+
+                    
+                    <form action="#" method="POST" class="space-y-4">
+                        <input type="hidden" name="_token" value="BfRaQQ2lFNPWPCB9fXrdaVZb6NcggIbm1gohY5Sb" autocomplete="off">
+                        
+                        <div>
+                            <label for="name"
+                                class="block text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-2">
+                                Name
+                            </label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full rounded-md bg-[#f4f1ea] dark:bg-[#232320] border-transparent focus:border-[#1b1b18] dark:focus:border-[#d4d4cf] focus:ring-0 text-sm py-3 px-4 text-[#1b1b18] dark:text-[#d4d4cf] placeholder-[#9a9485] transition-colors"
+                                placeholder="John Doe">
+                        </div>
+
+                        
+                        <div>
+                            <label for="email"
+                                class="block text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-2">
+                                Email
+                            </label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full rounded-md bg-[#f4f1ea] dark:bg-[#232320] border-transparent focus:border-[#1b1b18] dark:focus:border-[#d4d4cf] focus:ring-0 text-sm py-3 px-4 text-[#1b1b18] dark:text-[#d4d4cf] placeholder-[#9a9485] transition-colors"
+                                placeholder="john@example.com">
+                        </div>
+
+                        
+                        <div>
+                            <label for="message"
+                                class="block text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-2">
+                                Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full rounded-md bg-[#f4f1ea] dark:bg-[#232320] border-transparent focus:border-[#1b1b18] dark:focus:border-[#d4d4cf] focus:ring-0 text-sm py-3 px-4 text-[#1b1b18] dark:text-[#d4d4cf] placeholder-[#9a9485] transition-colors resize-none"
+                                placeholder="How can I help you?"></textarea>
+                        </div>
+
+                        
+                        <div class="pt-2 flex justify-end">
+                            <button type="submit"
+                                class="inline-flex items-center justify-center px-6 py-2.5 text-sm bg-[#1b1b18] text-white border border-black rounded-sm hover:bg-black transition-colors">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+
+                    
+                    <div class="pt-6 border-t border-[#eee7da] dark:border-[#272723]">
+                        <p class="text-[11px] uppercase tracking-[0.16em] text-[#9a9485] dark:text-[#86837a] mb-3">
+                            Connect elsewhere
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="mailto:your-email@example.com"
+                                class="text-sm text-[#706f6c] dark:text-[#A1A09A] hover:text-[#1b1b18] dark:hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa-solid fa-envelope"></i> Email
+                            </a>
+                            <a href="https://github.com/weedlesniper" target="_blank"
+                                class="text-sm text-[#706f6c] dark:text-[#A1A09A] hover:text-[#1b1b18] dark:hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/luc-adams-a8ba642b9"
+                                class="text-sm text-[#706f6c] dark:text-[#A1A09A] hover:text-[#1b1b18] dark:hover:text-white transition-colors flex items-center gap-2">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

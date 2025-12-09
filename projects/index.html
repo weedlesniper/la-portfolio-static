@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects – Luc Adams</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
+
+    <!-- Styles / Scripts -->
+    <link rel="preload" as="style" href="/build/assets/app-BchHeE2H.css" />
+    <link rel="modulepreload" as="script" href="/build/assets/app-BUTCVGT_.js" />
+    <link rel="stylesheet" href="/build/assets/app-BchHeE2H.css" data-navigate-track="reload" />
+    <script type="module" src="/build/assets/app-BUTCVGT_.js" data-navigate-track="reload"></script>
+</head>
+
+<body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] min-h-screen flex flex-col font-sans">
+
+
+    <nav x-data="{ open: false }" class="navbar">
+        <!-- Primary Navigation Menu -->
+        <div class="navbar__inner">
+            <div class="navbar__row">
+                <div class="flex">
+                    <!-- Logo -->
+                    <div class="navbar__brand">
+                        <a href="" aria-label="Go to home">
+                            <svg class="block h-9 w-auto" viewBox="0 0 140 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Luc Adams logo">
+                                <!-- Text-based mark so it stays crisp & lightweight -->
+                                <text x="0" y="20"
+                                    font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+                                    font-size="20" font-weight="600" fill="currentColor">
+                                    &lt;/LA&gt;
+                                </text>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Navigation Links (Desktop) -->
+                    <div class="navbar__links">
+
+                        <a href="" class="nav-link">
+                            Home
+                        </a>
+
+                        <a href="/projects" class="nav-link nav-link--active">
+                            Projects
+                        </a>
+
+                        <a href="/about" class="nav-link">
+                            About
+                        </a>
+
+                        <a href="/contact" class="nav-link">
+                            Contact
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Hamburger -->
+                <div class="navbar__hamburger">
+                    <button @click="open = ! open" class="hamburger-btn" aria-label="Toggle menu">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24" aria-hidden="true">
+                            <path :class="{ 'hidden': open, 'inline-flex': !open }" class="inline-flex"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                            <path :class="{ 'hidden': !open, 'inline-flex': open }" class="hidden"
+                                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="flex-1 flex flex-col items-center p-6 lg:p-8">
+
+
+        <div class="w-full max-w-5xl space-y-6">
+
+
+            <section>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+
+
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <video autoplay loop muted playsinline preload="metadata"
+                                class="w-full h-full object-cover block">
+                                <source src="/storage/projects/multimodal-pipeline.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="project-card__body">
+                            <div class="project-card__badge">
+                                <img src="/storage/logos/woodside.png" alt="Woodside Energy logo"
+                                    class="project-card__badge-logo">
+                                <span class="project-card__badge-text">
+                                    Woodside Energy
+                                </span>
+                            </div>
+                            <h3 class="project-card__title">Multimodal AI</h3>
+                            <p class="project-card__desc">
+                                Developed a custom multimodal document encoding pipeline for Amazon Bedrock models,
+                                enabling efficient interpretation of images and tables within DOCX and PDF files while
+                                significantly reducing token usage.
+                            </p>
+
+                            <div class="project-card__meta">
+                                <span class="project-card__tag">Amazon Bedrock</span>
+                                <span class="project-card__tag">Claude Sonnet 3.0</span>
+                                <span class="project-card__tag">Document Encoding</span>
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">HTML</span>
+                                <span class="project-card__tag">Industry</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__divider"></div>
+
+                        <div class="project-card__actions">
+                            <span
+                                class="project-card__button inline-flex items-center gap-2 opacity-50 cursor-not-allowed select-none">
+                                NDA
+                                <svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <video autoplay loop muted playsinline preload="metadata"
+                                class="w-full h-full object-cover block">
+                                <source src="/storage/projects/wysp-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="project-card__body">
+                            <div class="project-card__badge">
+                                <img src="/storage/logos/curtin.png" alt="Curtin University logo"
+                                    class="project-card__badge-logo">
+                                <span class="project-card__badge-text">
+                                    Curtin University
+                                </span>
+                            </div>
+                            <h3 class="project-card__title">Wysp: A Splitscreen IDE</h3>
+                            <p class="project-card__desc">
+                                Collaborative capstone project developing an educational coding environment for Computer
+                                Science
+                                students,
+                                inspired by <a href="https://inst.eecs.berkeley.edu/~cs188/fa24/projects/"
+                                    target="_blank" rel="noopener noreferrer" class="underline hover:opacity-80">
+                                    UC Berkeley’s Pacman AI project
+                                </a>. Delivered a cross-platform IDE with project management, autosaving, syntax
+                                checking,
+                                and
+                                integrated
+                                Java/Python execution to support teaching search and agent-based algorithms.
+                            </p>
+
+                            <div class="project-card__meta">
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">Java</span>
+                                <span class="project-card__tag">Agile</span>
+                                <span class="project-card__tag">Version Control</span>
+                                <span class="project-card__tag">PyQt</span>
+                                <span class="project-card__tag">Jpype</span>
+                                <span class="project-card__tag">Fullstack</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__divider"></div>
+
+                        <div class="project-card__actions">
+                            <a href="https://github.com/arlen-brower/Wysp"
+                                class="project-card__button inline-flex items-center gap-2" target="_blank"
+                                rel="noopener noreferrer">
+                                View project
+                                <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12.293 3.293a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L14 6.414V17a1 1 0 11-2 0V6.414l-2.293 2.293A1 1 0 018.293 7.293l4-4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <video autoplay loop muted playsinline preload="metadata"
+                                class="w-full h-full object-cover block">
+                                <source src="/storage/projects/mp-demo-vid.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="project-card__body">
+                            <div class="project-card__badge">
+                                <img src="/storage/logos/curtin.png" alt="Curtin University logo"
+                                    class="project-card__badge-logo">
+                                <span class="project-card__badge-text">
+                                    Curtin University
+                                </span>
+                            </div>
+                            <h3 class="project-card__title">Computer Vision Pipeline: Barcode Reader</h3>
+                            <p class="project-card__desc">
+                                Built a Machine Learning pipeline which: <br>
+                                1. Detects barcodes and extracts the relevant digits via a YOLO Model and OpenCV<br>
+                                2. Separates digits into individual images<br>
+                                3. Processed images are send to trained SVM model to generate final predictive
+                                output<br>
+
+                            </p>
+
+                            <div class="project-card__meta">
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">YOLO</span>
+                                <span class="project-card__tag">scikit-learn (SVM)</span>
+                                <span class="project-card__tag">OpenCV</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__divider"></div>
+
+                        <div class="project-card__actions">
+                            <a href="https://github.com/weedlesniper/barcode-reader-2024-MP"
+                                class="project-card__button inline-flex items-center gap-2" target="_blank"
+                                rel="noopener noreferrer">
+                                View project
+                                <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12.293 3.293a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L14 6.414V17a1 1 0 11-2 0V6.414l-2.293 2.293A1 1 0 018.293 7.293l4-4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <video autoplay loop muted playsinline preload="metadata"
+                                class="w-full h-full object-cover block">
+                                <source src="/storage/projects/ml-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="project-card__body">
+                            <div class="project-card__badge">
+                                <img src="/storage/logos/curtin.png" alt="Curtin University logo"
+                                    class="project-card__badge-logo">
+                                <span class="project-card__badge-text">
+                                    Curtin University
+                                </span>
+                            </div>
+                            <h3 class="project-card__title">BLEVE Peak Pressure Prediction</h3>
+                            <p class="project-card__desc">
+                                Data-driven ML project to predict peak blast pressure around an obstacle during LPG
+                                BLEVEs
+                                using
+                                27 wall-mounted sensors and thermofluid variables. Implemented cleaning, feature
+                                engineering,
+                                and scaling;
+                                compared diverse models (SVR, Random Forest, XGBoost) with MAPE and R².
+                            </p>
+
+                            <div class="project-card__meta">
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">scikit-learn</span>
+                                <span class="project-card__tag">XGBoost</span>
+                                <span class="project-card__tag">Random Forest</span>
+                                <span class="project-card__tag">SVR</span>
+                                <span class="project-card__tag">Pandas</span>
+                                <span class="project-card__tag">Kaggle</span>
+                                <span class="project-card__tag">Google Colab</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__divider"></div>
+
+                        <div class="project-card__actions">
+                            <a href="https://github.com/weedlesniper/machine-learning-2024"
+                                class="project-card__button inline-flex items-center gap-2" target="_blank"
+                                rel="noopener noreferrer">
+                                View project
+                                <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12.293 3.293a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L14 6.414V17a1 1 0 11-2 0V6.414l-2.293 2.293A1 1 0 018.293 7.293l4-4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <video autoplay loop muted playsinline preload="metadata"
+                                class="w-full h-full object-cover block">
+                                <source src="/storage/projects/ocr-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+
+                        <div class="project-card__body">
+                            <div class="project-card__badge">
+                                <img src="/storage/logos/tafe.png" alt="North Metropolitan TAFE logo"
+                                    class="project-card__badge-logo">
+                                <span class="project-card__badge-text">
+                                    North Metropolitan TAFE
+                                </span>
+                            </div>
+                            <h3 class="project-card__title">OCR Accessibility Tool</h3>
+                            <p class="project-card__desc">
+                                A custom-built accessibility system designed to support students with visual
+                                impairments—particularly
+                                screen-reader users such as those using JAWS—when learning software development. Coding
+                                tutorial
+                                videos
+                                often present key information visually, creating barriers for blind or low-vision
+                                learners.
+                                This
+                                tool
+                                solves that problem by enabling students to pause any video and instantly generate
+                                accurate,
+                                screen-reader-friendly text from the paused frame using OCR (Optical Character
+                                Recognition).
+                            </p>
+
+                            <div class="project-card__meta">
+                                <span class="project-card__tag">Python</span>
+                                <span class="project-card__tag">FastAPI</span>
+                                <span class="project-card__tag">React</span>
+                                <span class="project-card__tag">OCR</span>
+                                <span class="project-card__tag">Accessibility</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__divider"></div>
+
+                        <div class="project-card__actions">
+                            <a href="https://github.com/weedlesniper/ocrroo-advp-project"
+                                class="project-card__button inline-flex items-center gap-2" target="_blank"
+                                rel="noopener noreferrer">
+                                View project
+                                <svg class="size-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path
+                                        d="M12.293 3.293a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L14 6.414V17a1 1 0 11-2 0V6.414l-2.293 2.293A1 1 0 018.293 7.293l4-4z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-card">
+                        <div class="project-card__media">
+                            <video autoplay loop muted playsinline preload="metadata"
+                                class="w-full h-full object-cover block">
+                                <source src="/storage/projects/jokes-app-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="project-card__badge">
+                                <img src="/storage/logos/tafe.png" alt="North Metropolitan TAFE logo"
+                                    class="project-card__badge-logo">
+                                <span class="project-card__badge-text">
+                                    North Metropolitan TAFE
+                                </span>
+                            </div>
+                            <h3 class="project-card__title">Laravel 12 MVC SaaS Starter</h3>
+                            <p class="project-card__desc">
+                                A comprehensive full-stack web application built on Laravel 12, designed as a scalable
+                                SaaS-style base.
+                                Features robust Role-Based Access Control (RBAC) using Spatie to secure distinct Admin
+                                and Client interfaces.
+                                The system implements complete MVC architecture with Livewire for dynamic UI
+                                interactions,
+                                TailwindCSS v4 for styling, and includes user dashboards with personalized statistics
+                                and content management.
+                            </p>
+
+                            <div class="project-card__meta">
+                                <span class="project-card__tag">Laravel 12</span>
+                                <span class="project-card__tag">Livewire</span>
+                                <span class="project-card__tag">TailwindCSS v4</span>
+                                <span class="project-card__tag">Spatie RBAC</span>
+                                <span class="project-card__tag">MVC</span>
+                            </div>
+                        </div>
+
+                        <div class="project-card__divider"></div>
+
+                        <div class="project-card__actions">
+                            <span
+                                class="project-card__button inline-flex items-center gap-2 opacity-50 cursor-not-allowed select-none">
+                                Still being marked
+                                <svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>

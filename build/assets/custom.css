@@ -1,0 +1,75 @@
+
+/* Default: Mobile View */
+.desktop-nav {
+    display: none;
+}
+
+.mobile-hamburger {
+    display: block;
+}
+
+/* The Mobile Dropdown Menu (Base Light Mode Styles) */
+#mobile-menu {
+    display: none;
+    width: 100%;
+    background-color: #FDFDFC;
+    /* Light Mode Background */
+    border-top: 1px solid #eee;
+    padding: 1rem;
+}
+
+#mobile-menu a {
+    display: block;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    color: #1b1b18;
+    /* Light Mode Text */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+/* --- DARK MODE FIX (Increased Specificity) --- */
+
+/* 1. Support for System Preference (Media Query) */
+@media (prefers-color-scheme: dark) {
+    body #mobile-menu {
+        background-color: #0a0a0a !important;
+        /* Force Dark Background */
+        border-color: #272723 !important;
+    }
+
+    body #mobile-menu a {
+        color: #EDEDEC !important;
+        /* Force Dark Text */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+/* 2. Support for Tailwind 'class' mode (if .dark is added to HTML/Body) */
+.dark #mobile-menu,
+body.dark #mobile-menu {
+    background-color: #0a0a0a !important;
+    border-color: #272723 !important;
+}
+
+.dark #mobile-menu a,
+body.dark #mobile-menu a {
+    color: #EDEDEC !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Desktop View (Triggered at 768px) */
+@media (min-width: 768px) {
+    .desktop-nav {
+        display: flex !important;
+        gap: 1.5rem;
+    }
+
+    .mobile-hamburger {
+        display: none !important;
+    }
+
+    #mobile-menu {
+        display: none !important;
+    }
+}

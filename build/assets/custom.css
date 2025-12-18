@@ -1,3 +1,97 @@
+/* =========================================
+   1. VARIABLES (The "Warm Paper" Palette)
+   ========================================= */
+:root {
+    /* Light Mode (Default) */
+    /* CHANGE: Darkened slightly to a "Linen" tone so white cards pop */
+    --bg-body: #F7F6F3;       
+    --bg-card: #FFFFFF;       /* Pure white cards now stand out */
+    --bg-accent: #f4f1ea;     /* Beige for pills/secondary items */
+    
+    /* Typography */
+    --text-primary: #1b1b18;  /* Soft Black */
+    --text-secondary: #706f6c; /* Warm Grey */
+    
+    /* Borders & UI */
+    --border-subtle: #e4dfd4; /* The existing warm border color */
+    --border-focus: #1b1b18;  /* Dark border for active states */
+    --shadow-soft: 0 2px 8px -2px rgba(27, 27, 24, 0.05), 
+                   0 0 0 1px rgba(27, 27, 24, 0.04);
+}
+/* =========================================
+   2. DARK MODE OVERRIDES (System Preference)
+   ========================================= */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-body: #0a0a0a;
+        --bg-card: #161615;
+        --bg-accent: #232320;
+        
+        --text-primary: #EDEDEC;
+        --text-secondary: #A1A09A;
+        
+        --border-subtle: #272723;
+        --border-focus: #d4d4cf;
+        --shadow-soft: none; /* No shadows in dark mode, usually */
+    }
+}
+
+/* =========================================
+   3. GLOBAL STYLES
+   ========================================= */
+body {
+    background-color: var(--bg-body) !important; /* Override Tailwind defaults */
+    color: var(--text-primary) !important;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar: Sticky Glass Effect */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: var(--bg-body); /* Fallback */
+    /* Add transparency if supported */
+    background-color: color-mix(in srgb, var(--bg-body) 85%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+/* =========================================
+   4. CARD STYLING (Reworking .card-dark)
+   ========================================= */
+/* We force .card-dark to behave like a Light Card in light mode 
+   by using our variables.
+*/
+.card-dark, 
+.bg-white { 
+    background-color: var(--bg-card) !important;
+    border: 1px solid var(--border-subtle) !important;
+    border-radius: 0.75rem; 
+    box-shadow: var(--shadow-soft);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Ensure text inside cards contrasts correctly */
+.card-dark h3, 
+.card-dark h2 {
+    color: var(--text-primary) !important;
+}
+
+.card-dark p, 
+.card-dark span {
+    color: var(--text-secondary) !important;
+}
+
+/* Chart Canvas Background Fix */
+/* Ensures charts don't disappear on white backgrounds */
+canvas {
+    background-color: transparent; 
+}
+
+/* =========================================
+   5. YOUR EXISTING MOBILE MENU LOGIC
+   ========================================= */
 
 /* Default: Mobile View */
 .desktop-nav {
@@ -6,15 +100,15 @@
 
 .mobile-hamburger {
     display: block;
+    color: var(--text-primary); /* Updated to use variable */
 }
 
-/* The Mobile Dropdown Menu (Base Light Mode Styles) */
+/* The Mobile Dropdown Menu */
 #mobile-menu {
     display: none;
     width: 100%;
-    background-color: #FDFDFC;
-    /* Light Mode Background */
-    border-top: 1px solid #eee;
+    background-color: var(--bg-body); /* Updated to use variable */
+    border-top: 1px solid var(--border-subtle); /* Updated to use variable */
     padding: 1rem;
 }
 
@@ -22,40 +116,9 @@
     display: block;
     padding: 12px 0;
     font-size: 1.1rem;
-    color: #1b1b18;
-    /* Light Mode Text */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: var(--text-primary); /* Updated to use variable */
+    border-bottom: 1px solid var(--border-subtle); /* Updated to use variable */
     text-decoration: none;
-}
-
-/* --- DARK MODE FIX (Increased Specificity) --- */
-
-/* 1. Support for System Preference (Media Query) */
-@media (prefers-color-scheme: dark) {
-    body #mobile-menu {
-        background-color: #0a0a0a !important;
-        /* Force Dark Background */
-        border-color: #272723 !important;
-    }
-
-    body #mobile-menu a {
-        color: #EDEDEC !important;
-        /* Force Dark Text */
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    }
-}
-
-/* 2. Support for Tailwind 'class' mode (if .dark is added to HTML/Body) */
-.dark #mobile-menu,
-body.dark #mobile-menu {
-    background-color: #0a0a0a !important;
-    border-color: #272723 !important;
-}
-
-.dark #mobile-menu a,
-body.dark #mobile-menu a {
-    color: #EDEDEC !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Desktop View (Triggered at 768px) */
